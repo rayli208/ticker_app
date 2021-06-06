@@ -1,3 +1,173 @@
-h1{
-    color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+.stock-search-container{
+    display: flex;
+    justify-content: center;
+    margin: 45px 0px;
 }
+
+#search-name{
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    font-family: 'Work Sans', sans-serif;
+    padding: 12px;
+    border-radius: 40px;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+#search-name::placeholder{
+    color: #CCCCCC;
+}
+
+#search-stock-button{
+    border: 1px solid #000000;
+    color: #EEEEEE;
+    background-color: #000000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+.stock-data-placeholder{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+}
+
+.stock-data{
+    display: flex;
+    justify-content: center;
+}
+
+.stock-data-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+    min-width: 650px;
+}
+
+.stock-data-card-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.stock-data-card-header-title{    
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+
+.stock-data-card-header-sub{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.stock-data-card-header-sub{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+    font-weight: 100;
+}
+
+.stock-data-card-price{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;    
+    font-weight: 100;
+}
+
+.stock-data-card-main{
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.stock-data-card-main-half{
+    display: inline-block;
+    width: 50%;
+    box-sizing:unset;
+}
+
+.stock-data-card-main-half:nth-of-type(1)
+{
+    border-right: 1px solid #eee;
+    padding-right: 25px;
+} 
+
+.stock-data-card-main-half:nth-of-type(2)
+{
+    padding-left: 25px;
+} 
+
+.stock-data-card-main-half-values{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.stock-data-card-main-half-values-name{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-right: 15px;
+}
+
+.stock-data-card-main-half-values-number{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #888888;
+}
+
+.red{
+    color: #EB5757;
+}
+
+.green{
+    color: #27AE60;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .stock-data-card{
+        min-width: auto;
+    }
+  }
